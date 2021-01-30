@@ -1,0 +1,16 @@
+.chats {
+  flex: 1;
+  margin-top: 10px;
+  height: 100vh;
+  overflow: auto;
+}
+/* chrome */
+.chats::-webkit-scrollbar {
+  display: none;
+}
+
+.chats {
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+}

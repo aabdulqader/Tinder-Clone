@@ -1,0 +1,108 @@
+.chatScreen {
+  flex: 1;
+  margin-top: 20px;
+  width: 100%;
+  overflow: scroll;
+  padding-bottom: 50px;
+}
+
+/* chrome */
+.chatScreen::-webkit-scrollbar {
+  display: none;
+}
+
+.chatScreen {
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+}
+
+.chatScreen > p {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+  font-size: 13px;
+}
+
+.chatScreen__message {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.chatScreen__sender {
+  margin-left: 10px;
+  background-color: rgba(228, 228, 228, 0.781);
+  padding: 10px 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.chatScreen__receiver {
+  margin-left: auto;
+  background-color: rgba(27, 229, 236, 0.781);
+  padding: 10px 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.chatScreen__avatar {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.chatScreen__inputContainer {
+  position: fixed;
+  bottom: 0px;
+  width: 500px;
+  margin: auto;
+  background-color: white;
+}
+.chatScreen__inputContainer > form {
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.chatScreen__inputContainer > form > input {
+  flex: 1;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+}
+.chatScreen__inputContainer > form > button {
+  flex: 0.2;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  margin-right: 10px;
+  background-color: transparent;
+  font-weight: 600;
+  color: rgb(230, 22, 84);
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+.chatScreen__inputContainer > form > button:hover {
+  background-color: rgba(184, 184, 184, 0.795);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.chatScreen__inputContainer > form > button:disabled {
+  color: rgba(244, 35, 252, 0.589);
+}

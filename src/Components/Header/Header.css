@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0px 10px 19px -22px rgb(15, 15, 15);
+}
+.header > a > img {
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+.header > a > img:hover {
+  opacity: 0.8;
+}
+.header .MuiSvgIcon-root {
+  color: rgb(114, 114, 114);
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+.header .MuiSvgIcon-root:hover {
+  color: rgb(77, 77, 77);
+}
